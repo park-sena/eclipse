@@ -71,7 +71,7 @@ return (
     {/* ------------------- //콘텐츠 ------------------------- */}
 
     {/* 동영상 레이어 */}
-    <div className="ly_vod">
+    {/* <div className="ly_vod">
       <p>
         <a href="#close" className="ly_clse"></a>
         <iframe
@@ -84,7 +84,7 @@ return (
           allowFullScreen
         ></iframe>
       </p>
-    </div>
+    </div> */}
     {/* //동영상 레이어 */}
   </section>
 );

@@ -17,12 +17,16 @@ export default function Header() {
             <img src="https://resource.cyphers.co.kr/ui/img/char/char53.png" alt="루드빅" />
             <em>루드빅</em>
           </a>
+          <a href="#">
+            <img src="https://resource.cyphers.co.kr/ui/img/char/char52.png" alt="라이샌더" />
+            <em>라이샌더</em>
+          </a>
         </p>
         
         {/* 메인일러 출처 표기 */}
-        <p style={{position: 'relative'}}>
+        <span style={{position: 'relative'}}>
           <p style={{position:'absolute', right:'calc(50% - 600px)', top:'320px'}}>ⓒ출처기재</p>
-        </p>
+        </span>
         
       </div>
     </header>

@@ -28,9 +28,9 @@ export default function Header() {
         </p>
         
         {/* 메인일러 출처 표기 */}
-        <p style={{position: 'relative'}}>
+        <span style={{position: 'relative'}}>
           <p style={{position:'absolute', right:'calc(50% - 600px)', top:'320px'}}>ⓒkonghi98</p>
-        </p>
+        </span>
         
       </div>
     </header>
