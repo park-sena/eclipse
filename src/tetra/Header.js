@@ -24,9 +24,9 @@ export default function Header() {
         </p>
         
         {/* 메인일러 출처 표기 */}
-        <span style={{position: 'relative'}}>
+        <div style={{position: 'relative', display:'block'}}>
           <p style={{position:'absolute', right:'calc(50% - 600px)', top:'320px'}}>ⓒ출처기재</p>
-        </span>
+        </div>
         
       </div>
     </header>
