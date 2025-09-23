@@ -26,6 +26,12 @@ export default function Header() {
             <em>멜빈</em>
           </a>
         </p>
+        
+        {/* 메인일러 출처 표기 */}
+        <p style={{position: 'relative'}}>
+          <p style={{position:'absolute', right:'calc(50% - 600px)', top:'320px'}}>ⓒkonghi98</p>
+        </p>
+        
       </div>
     </header>
   );
