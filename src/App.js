@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter  as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import LeaApp from "lea/LeaApp";
 import TetraApp from "tetra/TetraApp";
 
 export default function App() {
   return (
-    <Router basename="/eclipse">
+    <Router>
       <Routes>
         {/* default */}
         <Route path="/" element={<Navigate to="/lea" />} />
