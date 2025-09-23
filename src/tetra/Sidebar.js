@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 export default function Sidebar() {
+  // 서브 : 좌측메뉴 열림
+	// const [open, setOpen] = useState({});
+
   return (
     <section className="s_menu">
       <dl>
@@ -25,10 +29,14 @@ export default function Sidebar() {
             관련문서
           </NavLink>
         </dd>
-        <dt>미디어</dt>
+        <dt className="open">미디어</dt>
         <dd>
-          <a href="#">콘텐츠</a>
-          <a href="#">보이스</a>
+          <NavLink to="/tetra/content" className={({ isActive }) => (isActive ? "sel" : "")}>
+            콘텐츠
+          </NavLink>
+          <NavLink to="/tetra/voice" className={({ isActive }) => (isActive ? "sel" : "")}>
+            보이스
+          </NavLink>
         </dd>
       </dl>
     </section>

@@ -7,6 +7,8 @@ import Skill from "./pages/Skill";
 import Eclipse from "./pages/Eclipse";
 import Report from "./pages/Report";
 import Document from "./pages/Document";
+import Content from "./pages/Content";
+import Voice from "./pages/Voice";
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
                 <Route path="eclipse" element={<Eclipse />} />
                 <Route path="report" element={<Report />} />
                 <Route path="document" element={<Document />} />
+                <Route path="content" element={<Content />} />
+                <Route path="voice" element={<Voice />} />
             </Routes>
         </main>
         </div>

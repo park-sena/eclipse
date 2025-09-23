@@ -13,12 +13,12 @@ export default function Sidebar() {
             스킬
           </NavLink>
         </dd>
-        <dt>스토리</dt>
+        <dt className="open">스토리</dt>
         <dd>
           <a href="#">ESPER 보고서</a>
           <a href="#">관련문서</a>
         </dd>
-        <dt>미디어</dt>
+        <dt className="open">미디어</dt>
         <dd>
           <a href="#">콘텐츠</a>
           <a href="#">보이스</a>
