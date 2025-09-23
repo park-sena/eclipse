@@ -18,6 +18,12 @@ export default function Header() {
             <em>루드빅</em>
           </a>
         </p>
+        
+        {/* 메인일러 출처 표기 */}
+        <p style={{position: 'relative'}}>
+          <p style={{position:'absolute', right:'calc(50% - 600px)', top:'320px'}}>ⓒ출처기재</p>
+        </p>
+        
       </div>
     </header>
   );
