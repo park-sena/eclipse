@@ -6,10 +6,10 @@ export default function Sidebar() {
       <dl>
         <dt className="open">기본정보</dt>
         <dd>
-          <NavLink to="/ability" className={({ isActive }) => (isActive ? "sel" : "")}>
+          <NavLink to="/lea/ability" className={({ isActive }) => (isActive ? "sel" : "")}>
             능력 및 활용
           </NavLink>
-          <NavLink to="/skill" className={({ isActive }) => (isActive ? "sel" : "")}>
+          <NavLink to="/lea/skill" className={({ isActive }) => (isActive ? "sel" : "")}>
             스킬
           </NavLink>
         </dd>

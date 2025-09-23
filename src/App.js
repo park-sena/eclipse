@@ -1,32 +1,26 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Ability from "./components/pages/Ability";
-import Skill from "./components/pages/Skill";
+
+import LeaApp from "./lea/LeaApp";
+import TetraApp from "./tetra/TetraApp";
 
 export default function App() {
   return (
     <Router basename="/eclipse">
-      <div id="wrap" className="sub">
-        {/* 상단 배너 */}
-        <Header />
+      <Routes>
+        {/* default */}
+        <Route path="/" element={<Navigate to="/lea" />} />
 
-        <div id="characContent" className="container">
-          {/* 좌측 메뉴 */}
-          <Sidebar />
+        {/* /lea 관련 하위 경로 */}
+        <Route path="/lea/*" element={<LeaApp />} />
 
-          {/* 본문 */}
-          <main className="content">
-            <Routes>
-              <Route path="/" element={<Navigate to="/ability" />} />
-              <Route path="/ability" element={<Ability />} />
-              <Route path="/skill" element={<Skill />} />
-            </Routes>
-          </main>
-        </div>
+        {/* /tetra 관련 하위 경로 */}
+        <Route path="/tetra/*" element={<TetraApp />} />
+      </Routes>
 
-        <footer>&copy; 2011 NEOPLE Inc. All Rights Reserved.</footer>
-      </div>
+      <footer>
+        ※ 해당 웹페이지는 공식 홈페이지를 참고한 팬페이지로 저작권은 사이퍼즈에게 있습니다.<br /><br />
+        &copy; 2011 NEOPLE Inc. All Rights Reserved.
+      </footer>
     </Router>
   );
 }
