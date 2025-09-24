@@ -5,6 +5,9 @@ import Ability from "./pages/Ability";
 import Skill from "./pages/Skill";
 
 export default function App() {
+  // 웹 타이틀 변경
+  document.title = "치명의 레아";
+
   return (
     <div id="wrap" className="sub">
         {/* 상단 배너 */}
