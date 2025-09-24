@@ -11,6 +11,9 @@ import Content from "./pages/Content";
 import Voice from "./pages/Voice";
 
 export default function App() {
+  // 웹 타이틀 변경
+  document.title = "직관의 테트라";
+
   return (
     <div id="wrap" className="sub">
         {/* 상단 배너 */}
